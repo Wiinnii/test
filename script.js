@@ -12,9 +12,6 @@ toTop.addEventListener('click', () => {
 })
 
 fetch("https://rickandmortyapi.com/api/character")
-    .rejected((rejected)=>{
-        alert(rejected)
-    })
     .then(response => response.json())
     .then(commits => {
         console.log(commits)
